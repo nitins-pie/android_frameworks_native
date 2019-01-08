@@ -47,8 +47,10 @@ cc_library_shared {
     ],
 
     product_variables: {
-        additional_gralloc_10_usage_bits: {
-            cppflags: ["-DADDNL_GRALLOC_10_USAGE_BITS=%s"],
+        custom: {
+            additional_gralloc_10_usage_bits: {
+                cppflags: ["-DADDNL_GRALLOC_10_USAGE_BITS=%s"],
+            },
         },
     },
 
